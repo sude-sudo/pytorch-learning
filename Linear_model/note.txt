@@ -1,0 +1,6 @@
+### 1.为什么torch.nn.MSELoss(reduction='mean')求和 与 求平均值在不同lr下有差别？
+是因为sum的梯度更大对应lr=0.1更容易发散，但是mean的梯度小对应的lr=0.1时不会发散
+###
+### 2.tensor变量的item()值是纯数字，tensor.detach()是无梯度的，正常的tensor变量是包含梯度
+例如print(tenor):test: tensor([[7.9324]], grad_fn=<AddmmBackward0>)
+###
