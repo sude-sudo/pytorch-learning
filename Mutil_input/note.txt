@@ -1,0 +1,7 @@
+### 1.多维度输入输出问题中使用多层神经网络逐步降维
+### 2.每层的输出需要使用激活函数激活，常见的如sigmoid函数
+### 3.在前向传播时写成如下形式：
+        x = self.activate(self.linear1(x))
+        x = self.activate(self.linear2(x))
+        x = self.activate(self.linear3(x))
+###
